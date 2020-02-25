@@ -1,0 +1,12 @@
+<button (click)="checkforsamenames()">click</button>
+{{filterednames}}
+
+<!-- Search box -->
+<input type="text" [(ngModel)]="searchText" placeholder="Search Category" />
+
+<!-- List of categories -->
+<ul>
+  <li *ngFor="let item of categories | filter : searchText : 'categoryName'">
+	{{item.categoryName}}
+  </li>
+</ul>

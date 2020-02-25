@@ -1,0 +1,7 @@
+<div *ngFor="let sample of getuserdats">
+    {{sample.name}}
+<input type="checkbox" [checked]="sample.eligible">{{sample.eligible}}
+<div class="jumbotron">
+    <h6 *ngIf="sample.eligible == true">{{sample.name}}</h6>
+</div>
+</div>

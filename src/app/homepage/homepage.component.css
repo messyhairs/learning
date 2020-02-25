@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Source+Code+Pro');
+
+h1
+{ 
+  font: 50px/1.3 "Abril Fatface", serif; 
+  color: #fff;
+  text-align: center;
+}
+h2
+{
+  font: 12px/1.7 'Source Code Pro', monospace;
+	color: #fff;
+	text-transform: uppercase;
+  text-align: center;
+}
+#container
+{
+  width: 300vw;
+}
+.viewport-1
+{
+  float: left;
+  background-size: cover;
+  /* background-image: url('http://www.tipue.com/img/float.jpg'); */
+  background: palevioletred;
+  width: 100vw;
+  height: 100vh;
+}
+.viewport-2
+{
+  float: left;
+  background-size: cover;
+  /* background-image: url('http://www.tipue.com/img/hands.jpg'); */
+  background: crimson;
+  width: 100vw;
+  height: 100vh;
+}
+.viewport-3
+{
+  float: left;
+  background-size: cover;
+  /* background-image: url('https://getwall.net/wp-content/uploads/2019/04/HD-Wildlife-Wallpaper.jpg'); */
+  background: orangered;
+  width: 100vw;
+  height: 100vh;
+}
+.inner-div
+{
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 390px;
+}
+

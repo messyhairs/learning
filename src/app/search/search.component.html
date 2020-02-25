@@ -1,0 +1,28 @@
+<!-- <input type="text" class="form-control" placeholder="Search" [(ngModel)]="query" id="listSearch">
+    <div class="panel panel-default col-xs-12 col-sm-11" *ngFor="let lock of locked | searc: query">
+    <input type="checkbox" (change)="openModal($event, lock)" class="check" id="{{lock.ID}}">
+    <label [for]="lock.ID" class="check-label"></label>
+    <h3 class="card-text name">{{lock.User}}</h3>
+    <h3 class="card-text auth">{{lock.AuthID}}</h3>
+    <h3 class="card-text form">{{lock.FormName}}</h3>
+    <h3 class="card-text win">{{lock.WinHandle}}</h3>
+</div> -->
+
+
+  <input type="text" class="form-control" placeholder="Search" [(ngModel)]="search" id="listSearch">
+
+<table>
+    
+    <tr>
+        <th>sno</th>
+        <th>user</th>
+        <th>name</th>
+        <th>handle</th>
+    </tr>
+    <tr *ngFor="let lock of locked | searc: search">
+        <td>{{lock.ID}}</td>
+        <td>{{lock.User}}</td>
+        <td>{{lock.FormName}}</td>
+        <td>{{lock.WinHandle}}</td>
+    </tr>
+</table>

@@ -1,0 +1,13 @@
+<!-- <nav>
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a [routerLink]="['/users', username]">Chris Profile</a></li>
+      <li><a routerLink="/users', username">Nick Profile</a></li>
+    </ul>
+  </nav> -->
+
+  <nav>
+    <ul *ngFor="let users of username">
+      <li><a [routerLink]="['/users', users.name,users.role]">{{users.name}}</a></li>
+    </ul>
+  </nav>

@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+/* width */
+/* @import "~ngx-sharebuttons/styles/share-buttons";
+@import "~ngx-sharebuttons/styles/themes/circles/circles-theme"; */
+@import '~@ngx-share/button/themes/default/default-theme';
+
+::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}  
