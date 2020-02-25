@@ -47,6 +47,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { GrooceeryComponent } from './grooceery/grooceery.component';
 import { PatchcompComponent } from './patchcomp/patchcomp.component';
+import { LoadertutComponent } from './loadertut/loadertut.component';
 
 
 @NgModule({
@@ -76,7 +77,8 @@ import { PatchcompComponent } from './patchcomp/patchcomp.component';
     ProductListComponent,
     ProductDetailsComponent,
     GrooceeryComponent,
-    PatchcompComponent
+    PatchcompComponent,
+    LoadertutComponent
   ],
   imports: [
     BrowserModule,
