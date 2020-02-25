@@ -42,6 +42,7 @@
     "ngx-facebook": "^2.4.0",
     "ngx-sharebuttons": "^4.1.4",
     "ngx-social-button": "^1.0.4",
+    "ngx-spinner": "^8.1.0",
     "rxjs": "~6.4.0",
     "rxjs-compat": "^6.5.3",
     "save": "^2.4.0",

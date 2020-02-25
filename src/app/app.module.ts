@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
@@ -31,6 +32,7 @@ import { SocialmediaComponent } from './socialmedia/socialmedia.component';
 //   return config;
 // }
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgxSpinnerModule } from 'ngx-spinner';
 import { FacebookModule } from 'ng2-facebook-sdk';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ParentComponent } from './parent/parent.component';
@@ -87,6 +89,7 @@ import { LoadertutComponent } from './loadertut/loadertut.component';
     Ng4LoadingSpinnerModule,
     HttpClientModule,
     JwSocialButtonsModule,
+    BrowserAnimationsModule,
     // NgxSocialButtonModule,
     ReactiveFormsModule,
     ShareButtonsModule.withConfig({
@@ -96,7 +99,8 @@ import { LoadertutComponent } from './loadertut/loadertut.component';
     FontAwesomeModule,
     LazyLoadImageModule.forRoot({
       preset: scrollPreset // <-- tell LazyLoadImage that you want to use scrollPreset
-    })
+    }),
+    NgxSpinnerModule
   ],
   providers: [
   ],
