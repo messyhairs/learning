@@ -7,7 +7,7 @@
         <tr *ngFor="let datas of rider2; let i = index">
           <td>{{i+1}}</td>
           <td>{{datas.name}}</td>
-          <td><input type="checkbox" [checked]="datas.select_status" statuchange()>{{datas.select_status}}</td>
+          <td><input type="checkbox" [checked]="datas.select_status">{{datas.select_status}}</td>
         </tr>
       </table>
       <br>
