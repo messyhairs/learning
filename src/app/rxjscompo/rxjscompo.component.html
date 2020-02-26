@@ -1,0 +1,20 @@
+<div class="container mt-3">
+    <div class="jumbotron">
+        <h3 class="text-center">student details</h3>
+    </div>
+    <div class="header list-group" *ngFor="let name of stdNames$ | async">
+        <ul class="list-group pb-3">
+            <li class="list-group-item text-dark font-weight-bold">{{name}}</li>
+        </ul>
+    </div>
+</div>
+<div class="container mt-3">
+    <div class="jumbotron">
+        <h3 class="text-center">Country details</h3>
+    </div>
+    <div class="header bg-warning list-group" *ngIf="countryName$ | async as myCountryName">
+        <ul class="list-group">
+            <li class="list-group-item text-uppercase font-weight-bold text-dark">{{myCountryName}}</li>
+        </ul>
+    </div>
+</div>

@@ -5,9 +5,13 @@
       <li><a routerLink="/users', username">Nick Profile</a></li>
     </ul>
   </nav> -->
-
-  <nav>
+<div class="container">
+  <div class="jumbotron">
+    <h3>Activated routing params</h3>
+  </div>
+</div>
+  <nav class="bg-dark">
     <ul *ngFor="let users of username">
-      <li><a [routerLink]="['/users', users.name,users.role]">{{users.name}}</a></li>
+      <li><a class="text-white" [routerLink]="['/users', users.name,users.role]">{{users.name}}</a></li>
     </ul>
   </nav>

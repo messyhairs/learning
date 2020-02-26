@@ -50,6 +50,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { GrooceeryComponent } from './grooceery/grooceery.component';
 import { PatchcompComponent } from './patchcomp/patchcomp.component';
 import { LoadertutComponent } from './loadertut/loadertut.component';
+import { RxjscompoComponent } from './rxjscompo/rxjscompo.component';
 
 
 @NgModule({
@@ -80,7 +81,8 @@ import { LoadertutComponent } from './loadertut/loadertut.component';
     ProductDetailsComponent,
     GrooceeryComponent,
     PatchcompComponent,
-    LoadertutComponent
+    LoadertutComponent,
+    RxjscompoComponent
   ],
   imports: [
     BrowserModule,
