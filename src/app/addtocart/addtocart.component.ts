@@ -11,27 +11,32 @@ export class AddtocartComponent implements OnInit {
     {
       id: '1',
       name: 'apple',
-      price: 100
+      price: 100,
+      quantity: 1
     },
     {
       id: '2',
       name: 'banana',
-      price: 200
+      price: 200,
+      quantity: 1
     },
     {
       id: '3',
       name: 'grape',
-      price: 290
+      price: 290,
+      quantity: 1
     },
     {
       id: '4',
       name: 'orange',
-      price: 560
+      price: 560,
+      quantity: 1
     },
     {
       id: '5',
       name: 'muskmelon',
-      price: 180
+      price: 180,
+      quantity: 1
     }
   ];
   public addcart: any = [];
@@ -39,6 +44,9 @@ export class AddtocartComponent implements OnInit {
   public amount = 0;
   public sum = 0;
   finalamount: any = [];
+  amountarray: any = [];
+  quantity: number;
+  finalprice: number;
   constructor() { }
 
   ngOnInit(): void {
@@ -48,11 +56,19 @@ export class AddtocartComponent implements OnInit {
     this.product.forEach(element => {
       if (datas === element.name) {
         this.addcart.push(element);
-        this.amount += element.price;
+        // this.amount += element.price;
       }
     });
   }
   removeItem(i: number): void {
     this.addcart.splice(i, 1);
+  }
+  addquantity(event) {
+    const addedQuantity = event.target.id;
+    this.addcart.forEach(item => {
+      if (addedQuantity === item.name) {
+        this.quantity = item.quantity++;
+      }
+    });
   }
 }

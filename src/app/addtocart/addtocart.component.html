@@ -31,12 +31,15 @@
             <th>name</th>
             <th>price</th>
             <th>more</th>
+            <th>quantity</th>
         </tr>
         <tr *ngFor="let item of addcart; let i = index">
             <td>{{item.id}}</td>
             <td>{{item.name}}</td>
-            <td>{{item.price}}</td>
+            <td>{{item.price * item.quantity}}</td>
             <td><button class="btn btn-primary" (click)="removeItem(i)">remove</button></td>
+            <td><button class="btn btn-success" id="{{item.name}}" (click)="addquantity($event)">{{item.quantity}}</button></td>
+
         </tr>
         <button class="btn btn-success" *ngIf="amount > 0">{{amount}}</button>
     </table>
