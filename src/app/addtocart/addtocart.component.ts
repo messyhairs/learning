@@ -37,7 +37,13 @@ export class AddtocartComponent implements OnInit {
       name: 'muskmelon',
       price: 180,
       quantity: 1
-    }
+    },
+    {
+      id: '6',
+      name: 'apple',
+      price: 190,
+      quantity: 1
+    },
   ];
   public addcart: any = [];
   public cta = 'ADD';
@@ -68,6 +74,14 @@ export class AddtocartComponent implements OnInit {
     this.addcart.forEach(item => {
       if (addedQuantity === item.name) {
         this.quantity = item.quantity++;
+      }
+    });
+  }
+  reduceQuantity(event) {
+    const addedQuantity = event.target.id;
+    this.addcart.forEach(item => {
+      if (addedQuantity === item.name) {
+        this.quantity = item.quantity--;
       }
     });
   }
