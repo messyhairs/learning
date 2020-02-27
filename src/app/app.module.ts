@@ -51,6 +51,7 @@ import { GrooceeryComponent } from './grooceery/grooceery.component';
 import { PatchcompComponent } from './patchcomp/patchcomp.component';
 import { LoadertutComponent } from './loadertut/loadertut.component';
 import { RxjscompoComponent } from './rxjscompo/rxjscompo.component';
+import { NdetutoComponent } from './ndetuto/ndetuto.component';
 
 
 @NgModule({
@@ -82,7 +83,8 @@ import { RxjscompoComponent } from './rxjscompo/rxjscompo.component';
     GrooceeryComponent,
     PatchcompComponent,
     LoadertutComponent,
-    RxjscompoComponent
+    RxjscompoComponent,
+    NdetutoComponent
   ],
   imports: [
     BrowserModule,
