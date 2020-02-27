@@ -76,6 +76,7 @@ export class AddtocartComponent implements OnInit {
         this.quantity = item.quantity++;
       }
     });
+    console.log(this.addcart);
   }
   reduceQuantity(event) {
     const addedQuantity = event.target.id;
@@ -84,5 +85,6 @@ export class AddtocartComponent implements OnInit {
         this.quantity = item.quantity--;
       }
     });
+    console.log(this.addcart);
   }
 }
