@@ -38,9 +38,12 @@
             <td>{{item.name}}</td>
             <td>{{item.price * item.quantity}}</td>
             <td><button class="btn btn-primary" (click)="removeItem(i)">remove</button></td>
-            <td><button class="btn btn-success" id="{{item.name}}" (click)="addquantity($event)">{{item.quantity}}</button> / <button *ngIf="item.quantity > 0" class="btn btn-danger" id="{{item.name}}" (click)="reduceQuantity($event)">-</button> </td>
+            <td><button class="btn btn-success" id="{{item.name}}"
+                    (click)="addquantity($event)">{{item.quantity}}</button> / <button *ngIf="item.quantity > 0"
+                    class="btn btn-danger" id="{{item.name}}" (click)="reduceQuantity($event)">-</button> </td>
 
         </tr>
         <button class="btn btn-success" *ngIf="amount > 0">{{amount}}</button>
     </table>
+    <button class="btn btn-primary" (click)="onsubmit()">checkout</button>
 </div>

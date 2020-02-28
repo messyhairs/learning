@@ -53,6 +53,7 @@ export class AddtocartComponent implements OnInit {
   amountarray: any = [];
   quantity: number;
   finalprice: number;
+  cartdata: any = [];
   constructor() { }
 
   ngOnInit(): void {
@@ -76,7 +77,7 @@ export class AddtocartComponent implements OnInit {
         this.quantity = item.quantity++;
       }
     });
-    console.log(this.addcart);
+    // console.log(this.addcart);
   }
   reduceQuantity(event) {
     const addedQuantity = event.target.id;
@@ -85,6 +86,6 @@ export class AddtocartComponent implements OnInit {
         this.quantity = item.quantity--;
       }
     });
-    console.log(this.addcart);
+    // console.log(this.addcart);
   }
 }

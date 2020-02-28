@@ -52,6 +52,7 @@ import { PatchcompComponent } from './patchcomp/patchcomp.component';
 import { LoadertutComponent } from './loadertut/loadertut.component';
 import { RxjscompoComponent } from './rxjscompo/rxjscompo.component';
 import { NdetutoComponent } from './ndetuto/ndetuto.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 @NgModule({
@@ -84,7 +85,8 @@ import { NdetutoComponent } from './ndetuto/ndetuto.component';
     PatchcompComponent,
     LoadertutComponent,
     RxjscompoComponent,
-    NdetutoComponent
+    NdetutoComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
