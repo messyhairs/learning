@@ -1,4 +1,4 @@
-<app-checkboxgotit></app-checkboxgotit>
+<!-- <app-checkboxgotit></app-checkboxgotit> -->
 <!-- <app-parent></app-parent> -->
 <!-- <app-dicode></app-dicode> -->
 <!-- <app-lazyload></app-lazyload> -->
@@ -15,5 +15,14 @@
 <!-- <app-product-list></app-product-list> -->
 <!-- <app-grooceery></app-grooceery> -->
 <!-- <app-patchcomp></app-patchcomp> -->
-<!-- <app-loadertut></app-loadertut> -->
-<router-outlet></router-outlet>
+
+<router-outlet>
+  <div class="main">
+    <div class="content">
+      <div class="spinner-border" *ngIf="showLoader" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </div>
+  <app-loadertut></app-loadertut>
+</router-outlet>

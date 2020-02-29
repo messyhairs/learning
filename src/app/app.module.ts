@@ -50,6 +50,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { GrooceeryComponent } from './grooceery/grooceery.component';
 import { PatchcompComponent } from './patchcomp/patchcomp.component';
 import { LoadertutComponent } from './loadertut/loadertut.component';
+import { LoadService } from './load.service';
 
 
 @NgModule({
@@ -102,8 +103,7 @@ import { LoadertutComponent } from './loadertut/loadertut.component';
     }),
     NgxSpinnerModule
   ],
-  providers: [
-  ],
+  providers: [ LoadService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,33 +1,26 @@
-<p>
-    <button (click)="getResult()">Get result</button>
+<!-- <p>
+  <button (click)="getResult()">Get result</button>
 </p>
-<div>
-    <h2>Results</h2>
-    <!-- <progress *ngIf="isLoading" class="loading">Loading...</progress> -->
-    <div class="spinner-border" role="status" *ngIf="isLoading">
-        <span class="sr-only">Loading...</span>
-    </div>
-    <p *ngIf="results">{{ results | json }}</p>
-    <p *ngIf="error">Error: {{ error | json }}</p>
-</div>
+<div> -->
+<!-- <h2>Results</h2> -->
+<!-- <progress *ngIf="isLoading" class="loading">Loading...</progress> -->
+<!-- <div class="spinner-border" role="status" *ngIf="isLoading">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <p *ngIf="results">{{ results | json }}</p>
+  <p *ngIf="error">Error: {{ error | json }}</p>
+</div> -->
 
 <div>
-    <h2>sampledatas</h2>
-    <button (click)="getsample()">Get sample</button>
+  <h2>sampledatas</h2>
+  <button (click)="getsample()">Get sample</button>
   <div *ngFor="let datas of sumdata">
-      {{datas.employee_name}}
+    {{datas.employee_name}}
   </div>
 </div>
-<ngx-spinner
-bdOpacity = 0.9
-bdColor = "crimson"
-size = "medium"
-color = "#fff"
-type = "timer"
-[fullScreen] = "true"
->
-<p style="color: white" > Loading... </p>
-</ngx-spinner>
+<!-- <ngx-spinner bdOpacity=0.9 bdColor="crimson" size="medium" color="#fff" type="timer" [fullScreen]="true">
+  <p style="color: white"> Loading... </p>
+</ngx-spinner> -->
 
 <!-- <ngx-spinner
   bdColor="rgba(51,51,51,0.8)"
