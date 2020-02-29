@@ -4,7 +4,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    background-color: transparent;
+    height:100vh;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
     display: table;
     color: black;
 
