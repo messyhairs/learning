@@ -51,6 +51,8 @@ import { GrooceeryComponent } from './grooceery/grooceery.component';
 import { PatchcompComponent } from './patchcomp/patchcomp.component';
 import { LoadertutComponent } from './loadertut/loadertut.component';
 import { LoadService } from './load.service';
+import { EventemitterComponent } from './eventemitter/eventemitter.component';
+import { EventemitterchildComponent } from './eventemitterchild/eventemitterchild.component';
 
 
 @NgModule({
@@ -81,7 +83,9 @@ import { LoadService } from './load.service';
     ProductDetailsComponent,
     GrooceeryComponent,
     PatchcompComponent,
-    LoadertutComponent
+    LoadertutComponent,
+    EventemitterComponent,
+    EventemitterchildComponent
   ],
   imports: [
     BrowserModule,
