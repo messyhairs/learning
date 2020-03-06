@@ -15,7 +15,14 @@
 <!-- <app-product-list></app-product-list> -->
 <!-- <app-grooceery></app-grooceery> -->
 <!-- <app-patchcomp></app-patchcomp> -->
-<!-- <app-loadertut></app-loadertut> -->
-<!-- <app-rxjscompo></app-rxjscompo> -->
-<!-- <app-ndetuto></app-ndetuto> -->
-<router-outlet></router-outlet>
+
+<router-outlet>
+  <div class="main" *ngIf="showLoader">
+    <div class="content">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </div>
+  <!-- <app-loadertut></app-loadertut> -->
+</router-outlet>

@@ -4,6 +4,8 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
+import { EventemitterComponent } from './eventemitter/eventemitter.component';
+import { EventemitterchildComponent } from './eventemitterchild/eventemitterchild.component';
 
 const routes: Routes = [
   { path: 'customer-list',
@@ -13,7 +15,8 @@ const routes: Routes = [
   // { path: '', redirectTo: 'product-list', pathMatch: 'full' },
   { path: 'product-list', component: ProductListComponent },
   { path: 'users/:username/:role', component: ProductDetailsComponent },
-  {path: '**', component: PagenotfoundComponent}
+  {path: '**', component: PagenotfoundComponent},
+  { path: '', component: EventemitterComponent}
 ];
 
 @NgModule({

@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { LazyLoadImageModule, scrollPreset } from 'ng-lazyload-image'; // <-- include scrollPreset
 // import {
@@ -53,6 +53,9 @@ import { LoadertutComponent } from './loadertut/loadertut.component';
 import { RxjscompoComponent } from './rxjscompo/rxjscompo.component';
 import { NdetutoComponent } from './ndetuto/ndetuto.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { LoadService } from './load.service';
+import { EventemitterComponent } from './eventemitter/eventemitter.component';
+import { EventemitterchildComponent } from './eventemitterchild/eventemitterchild.component';
 
 
 @NgModule({
@@ -86,7 +89,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     LoadertutComponent,
     RxjscompoComponent,
     NdetutoComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    EventemitterComponent,
+    EventemitterchildComponent
   ],
   imports: [
     BrowserModule,
@@ -108,8 +113,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     }),
     NgxSpinnerModule
   ],
-  providers: [
-  ],
+  providers: [LoadService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
