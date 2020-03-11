@@ -56,6 +56,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { LoadService } from './load.service';
 import { EventemitterComponent } from './eventemitter/eventemitter.component';
 import { EventemitterchildComponent } from './eventemitterchild/eventemitterchild.component';
+import { PreviewPaneComponent } from './preview-pane/preview-pane.component';
 
 
 @NgModule({
@@ -91,7 +92,8 @@ import { EventemitterchildComponent } from './eventemitterchild/eventemitterchil
     NdetutoComponent,
     PagenotfoundComponent,
     EventemitterComponent,
-    EventemitterchildComponent
+    EventemitterchildComponent,
+    PreviewPaneComponent
   ],
   imports: [
     BrowserModule,

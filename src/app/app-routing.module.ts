@@ -15,8 +15,8 @@ const routes: Routes = [
   // { path: '', redirectTo: 'product-list', pathMatch: 'full' },
   { path: 'product-list', component: ProductListComponent },
   { path: 'users/:username/:role', component: ProductDetailsComponent },
-  {path: '**', component: PagenotfoundComponent},
-  { path: '', component: EventemitterComponent}
+  // {path: '**', component: PagenotfoundComponent},
+  // { path: '', component: EventemitterComponent}
 ];
 
 @NgModule({
